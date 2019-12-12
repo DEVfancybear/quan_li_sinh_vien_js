@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    padding-top: 30px;
+    text-align: center;
+}
+.box_item {
+  float: right;
+  margin-top: 20px;
+}
+.khoang_cach {
+    margin-left: 10px;;
+}
+.khoang_cach_row {
+    padding-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+.text_item {
+    margin-bottom: 20px;;
+}

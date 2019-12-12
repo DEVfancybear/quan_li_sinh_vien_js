@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quản Lí Sinh Viên</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Quản Lí Sinh Viên Full Project</h1>
+    <div class="container">
+      <div class="row">
+        <h3>Mã sinh viên</h3>
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Nhập Mã Sinh Viên"
+            aria-label="Mã Sinh Viên"
+            aria-describedby="basic-addon1"
+            id="masv"
+          />
+        </div>
+        <h3>Họ và tên</h3>
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Nhập Họ Và Tên"
+            aria-label="Họ Và Tên"
+            aria-describedby="basic-addon1"
+            id="hoten"
+          />
+        </div>
+        <h3>CMND</h3>
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Nhập CMND"
+            aria-label="CMND"
+            aria-describedby="basic-addon1"
+            id="cmnd"
+          />
+        </div>
+        <h3>Nhập Email</h3>
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Nhập Email"
+            aria-label="Email"
+            aria-describedby="basic-addon1"
+            id="email"
+          />
+        </div>
+        <h3>Điện thoại</h3>
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Nhập Số Điện Thoại"
+            aria-label="Số điện thoại"
+            aria-describedby="basic-addon1"
+            id="sdt"
+          />
+        </div>
+        <button type="button" class="btn btn-success" onclick="ThemSinhVien()">
+          Thêm Sinh Viên
+        </button>
+      </div>
+      <div class="row box_item">
+        <button type="button" class="btn btn-primary" onclick="setStorage()">
+          Lưu Storage
+        </button>
+        <button
+          type="button"
+          class="btn btn-warning khoang_cach"
+          onclick="getStorage()"
+        >
+          Lấy Storage
+        </button>
+        <button
+          type="button"
+          class="btn btn-danger khoang_cach"
+          onclick="delSinhVien()"
+        >
+          Xóa Sinh Viên
+        </button>
+      </div>
+      <div class="row khoang_cach_row">
+        <div class="input-group mb-3">
+          <input
+            id="tukhoa"
+            type="text"
+            class="form-control"
+            placeholder="Tìm kiếm"
+            aria-label="Tìm kiếm"
+            aria-describedby="button-addon2"
+            onkeyup="timKiemSinhVien()"
+            onchange="timKiemSinhVien()"
+          />
+          <div class="input-group-append">
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="button-addon2"
+              onclick="timKiemSinhVien()"
+            >
+              Tìm Kiếm
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row khoang_cach_row">
+        <h3 class="text_item">Danh Sách Sinh Viên</h3>
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Mã Sinh Viên</th>
+              <th scope="col">Họ Và Tên</th>
+              <th scope="col">CMND</th>
+              <th scope="col">Email</th>
+              <th scope="col">Điện Thoại</th>
+            </tr>
+          </thead>
+          <tbody id="dataSinhVien">
+            <tr></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.js"></script>
+  <script src="./script.js"></script>
+</html>
