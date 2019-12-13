@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "MaSV": "01",
+      "HoTen": "Dương Trung Lê",
+      "Cmnd": "cầu Giấy, Hà Nội",
+      "Email": "letrungduongxx3@gmail.com",
+      "Sdt": "0984760258",
+      "DiemToan": "4",
+      "DiemLi": "4",
+      "DiemHoa": "4",
+      "DTB": "4",
+      "loai": "Xếp Loại Yếu",
+      "id": 1
+    },
+    {
+      "MaSV": "02",
+      "HoTen": "Lan Nguyễn",
+      "Cmnd": "424543",
+      "Email": "langnuye2324@gmail.com",
+      "Sdt": "43245345345",
+      "DiemToan": "4.33",
+      "DiemLi": "8.2323",
+      "DiemHoa": "4.2",
+      "DTB": "6",
+      "loai": "Xếp Loại Trung Bình",
+      "id": 2
+    }
+  ]
+}

@@ -21,3 +21,7 @@ h1 {
 .text_item {
     margin-bottom: 20px;;
 }
+.trSinhVien:hover {
+    background-color: aquamarine;
+    cursor: pointer;
+}

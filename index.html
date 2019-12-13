@@ -67,8 +67,49 @@
             id="sdt"
           />
         </div>
+        <h3>Điểm toán</h3>
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Nhập Điểm toán"
+            aria-label="Điểm toán"
+            aria-describedby="basic-addon1"
+            id="Toan"
+          />
+        </div>
+        <h3>Điểm lí</h3>
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Nhập Điểm lí"
+            aria-label="Điểm lí"
+            aria-describedby="basic-addon1"
+            id="Li"
+          />
+        </div>
+        <h3>Điểm hóa</h3>
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Nhập Điểm hóa"
+            aria-label="Điểm hóa"
+            aria-describedby="basic-addon1"
+            id="Hoa"
+          />
+        </div>
         <button type="button" class="btn btn-success" onclick="ThemSinhVien()">
           Thêm Sinh Viên
+        </button>
+        <button
+          type="button"
+          style="margin-left: 15px;"
+          class="btn btn-info"
+          onclick="luuThongTin()"
+        >
+          Lưu Thay Đổi
         </button>
       </div>
       <div class="row box_item">
@@ -125,6 +166,8 @@
               <th scope="col">CMND</th>
               <th scope="col">Email</th>
               <th scope="col">Điện Thoại</th>
+              <th scope="col">Điểm Trung Bình</th>
+              <th scope="col">Xếp Loại</th>
             </tr>
           </thead>
           <tbody id="dataSinhVien">
@@ -134,7 +177,9 @@
       </div>
     </div>
   </body>
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+  <script src="./SinhVienService.js"></script>
+  <!-- <script src="https://unpkg.com/axios/dist/axios.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.js"></script>
   <script src="./script.js"></script>
